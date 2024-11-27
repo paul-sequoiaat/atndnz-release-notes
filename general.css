@@ -5,7 +5,8 @@ body {
     margin: 0;
 }
 #version-list {
-    width: 20%;
+    max-width: 30%;
+    min-width: 20%;
     border-right: 1px solid #ccc;
     padding: 10px;
     box-sizing: border-box;
@@ -38,6 +39,7 @@ body {
 .selected-version {
     background-color: #38286c;
     color: white;
+    
 }
 .drop-down {
     border: none;
