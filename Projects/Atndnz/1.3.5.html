@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Release Notes - Version 1.3.5</title>
+    <link rel="stylesheet" href="../general.css">
+</head>
+<body>
+
+<h2>Version 1.3.5</h2>
+<p>Release Date - 21 Oct 2024</p>
+<table class="small-table">
+    <thead>
+        <tr>
+            <th>Component</th>
+            <th>Version</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#admin-dashboard">Admin Dashboard</a></td>
+            <td>1.3.5</td>
+        </tr>
+        <tr>
+            <td><a href="#mobile-app">Mobile App</a></td>
+            <td>1.3.2</td>
+        </tr>
+        <tr>
+            <td><a href="#rest-api-server">REST API Server</a></td>
+            <td>1.3.2</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h3 id="admin-dashboard">Admin Dashboard Features</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Ticket Number</th>
+            <th>Features Added</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/60" class="gradient-text">#60</a></td>
+            <td>Report to view the locations visited by the Field working employee - Report</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/182" class="gradient-text">#281</a></td>
+            <td>Report to view Leave request - Web App</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Fixes Done in Admin Dashboard</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Ticket Number</th>
+            <th>Fixes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/185" class="gradient-text">#185</a></td>
+            <td>In the 'Register' page, the error message, for empty OTP, is displayed in a dialogue box under the 'OTP' field.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/pull/258" class="gradient-text">#258</a></td>
+            <td>Removed the refresh API and changed the text "last updated time" to "as of".</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/237" class="gradient-text">#237</a></td>
+            <td> The error toast message while importing a pdf or docx, etc. (new message suggested in the description) appears multiple times when 'import' button is clicked multiple times..</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/238" class="gradient-text">#238</a></td>
+            <td>When a csv file with a long name is being imported, the placeholder for the file name widens and changes the buttons and other component alignments.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/110" class="gradient-text">#210</a></td>
+            <td>No tooltips for the buttons in the 'Actions' column in the Employees page.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/183" class="gradient-text">#183</a></td>
+            <td>The 'Cancel' button to be available after the 10 mins countdown for OTP verification while registering.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/105" class="gradient-text">#105</a></td>
+            <td>ooltip needed for delete icon in Location page</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/117" class="gradient-text">#117</a></td>
+            <td>The left menu button boundaries are too big. The section gets highlighted when the mouse pointer is hovered on it, but the button is only in the middle of the highlighted area.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/180" class="gradient-text">#180</a></td>
+            <td>The error message for invalid email, appears in a dialogue box below the 'Email' field..</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/94" class="gradient-text">#94</a></td>
+            <td>Navigating to previous page using browsers' back button, after setting the location info in User-guide page, directs to home page.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/197" class="gradient-text">#197</a></td>
+            <td>The user is able to add the location information with the pincode/zip code value other than digits.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/178" class="gradient-text">#178</a></td>
+            <td>The error message for empty email is displayed in a dialogue box under the 'Email' field instead of toastify message.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/212" class="gradient-text">#212</a></td>
+            <td>Gate information of location not refreshed </td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/204" class="gradient-text">#204</a></td>
+            <td>The error message for empty 'Company name' appears in a dialogue box below the field instead of a toastify message.</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/265" class="gradient-text">#265</a></td>
+            <td>The drop-down for selecting location information while adding an employee in the 'Employees' page has an unwanted option, 'All locations' which causes 'internal server error'</td>
+        </tr>
+        </tbody>
+</table>
+
+<h3 id="rest-api-server">REST API Server Features</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Ticket Number</th>
+            <th>Features Added</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/184" class="gradient-text">#184</a></td>
+            <td>API to get the leave request details for the leave report and CSV Download </td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/143" class="gradient-text">#143</a></td>
+            <td>Report to view the locations visited by the Field working employee</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Database Changes</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Ticket Number</th>
+            <th>Changes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/143" class="gradient-text">#143</a></td>
+            <td>Created tbl_field_work_attendance table for company schemas</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/sequoia-at/ams-admin/issues/143" class="gradient-text">#143</a></td>
+            <td>Added created_at column for tenant table in public schema</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
