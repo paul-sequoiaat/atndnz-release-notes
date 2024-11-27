@@ -42,10 +42,21 @@
         </tr>
         <tr>
           <td><a href="#rest-api-server">REST API Server</a></td>
-          <td>1.3.7</td>
+          <td>1.3.8</td>
           <td>
             <a
-              href="https://teamsequoia.sharepoint.com/sites/amsapk/Atndnz/Forms/AllItems.aspx?newTargetListUrl=%2Fsites%2Famsapk%2FAtndnz&viewpath=%2Fsites%2Famsapk%2FAtndnz%2FForms%2FAllItems%2Easpx&OR=Teams%2DHL&CT=1731473698830&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDEwMjAwMTMxNiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&id=%2Fsites%2Famsapk%2FAtndnz%2FREST%20API%2F1%2E3%2E7&viewid=ef65b72f%2Dba83%2D4d45%2Db80c%2Dd7ee60b5af08"
+              href="https://teamsequoia.sharepoint.com/:u:/s/amsapk/EYkRDEL_pGpNt7CFoFhXOwoB62XdodZm28hYAVBXQg7XNQ?e=KsPoMW"
+              target="_blank">
+              click here to download</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#db-script">Database Script</a></td>
+          <td>1.3.8</td>
+          <td>
+            <a
+              href="https://teamsequoia.sharepoint.com/:u:/s/amsapk/Ee9ZdyIMu9dJtVHrRmOSeJEBGRAsh0YTdD1W2eYgrx9w_A?e=L2j9WF"
               target="_blank">
               click here to download</a
             >
@@ -268,85 +279,108 @@
       <tbody>
         <tr>
           <td>
-            <a href="https://github.com/sequoia-at/ams-admin/issues/328"
-            target="_blank">#328</a
+            <a href="https://github.com/sequoia-at/ams-admin/issues/296"
+            target="_blank">#296</a
             >
           </td>
           <td>
-            Capture the device time zone while marking attendance using Atndnz
-            mobile app - API
+            The system-marked-exit scheduler function should be able to 
+            identify the local time zone of the user's device and should 
+            be able to automatically mark the exit, appropriately (shift based attendance marking)
           </td>
         </tr>
         <tr>
           <td>
-            <a href="https://github.com/sequoia-at/ams-admin/issues/339"
-            target="_blank">#339</a
+            <a href="https://github.com/sequoia-at/ams-admin/issues/355"
+            target="_blank">#355</a
             >
           </td>
           <td>
-            Fetch Attendance transaction for the reports and apply the time zone
-            conversion for the respective entry and exit time based on the time
-            zone flag - API
+            Mark the exit time of the previous marked attendance entry when the field work started - API
           </td>
         </tr>
         <tr>
           <td>
-            <a href="https://github.com/sequoia-at/ams-admin/issues/337"
-            target="_blank">#337</a
+            <a href="https://github.com/sequoia-at/ams-admin/issues/356"
+            target="_blank">#356</a
             >
           </td>
           <td>
-            Fetch Attendance entry and exit time for office, remote and field
-            user work from DB and convert the time based on time zone flag
-            request - API
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="https://github.com/sequoia-at/ams-admin/issues/342"
-            target="_blank">#342</a
-            >
-          </td>
-          <td>
-            Fetch Attendance transaction for the reports download to CSV and
-            apply the time zone conversion for the respective entry and exit
-            time based on the time zone flag - API
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="https://github.com/sequoia-at/ams-admin/issues/345"
-            target="_blank">#345</a
-            >
-          </td>
-          <td>
-            Include User transaction City and Country in the response of the API
-            invoked to display the time for the Dashboard and Report - API
+            Attendance log report to include field user start work time and end of work time as attendance - API
           </td>
         </tr>
       </tbody>
     </table>
 
-    <h3>Database Changes</h3>
+    <h3>Fixes Done in REST API Server</h3>
     <table>
       <thead>
         <tr>
           <th>Ticket Number</th>
-          <th>Changes</th>
+          <th>Fixes</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>
             <a
-              href="https://github.com/sequoia-at/ams-admin/issues/327"
+              href="https://github.com/sequoia-at/ams-admin/issues/314"target="_blank"
               class="gradient-text"
-              target="_blank">#327</a
+              >#314</a
             >
           </td>
           <td>
-            SQL Script for addition of column to capture user transaction and
-            base location time zone - DB
+            UAT - Zero minutes/few seconds of 'Working hours' needs to be recorded in the reports and should be blank 
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <a
+              href="https://github.com/sequoia-at/ams-admin/issues/316"target="_blank"
+              class="gradient-text"
+              >#316</a
+            >
+          </td>
+          <td>
+            UAT - The records in the reports are not in sequence, are not sorted in ascending/descending order
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a
+              href="https://github.com/sequoia-at/ams-admin/issues/359"target="_blank"
+              class="gradient-text"
+              >#359</a
+            >
+          </td>
+          <td>
+            Scheduler job to mark exit time for different time zone has to check the update of exit time - API
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a
+              href="https://github.com/sequoia-at/ams-admin/issues/363"target="_blank"
+              class="gradient-text"
+              >#363</a
+            >
+          </td>
+          <td>
+            Dashboard not showing the employee logged in / out when the number of employee In and Out button in each location in clicked - Web App and API
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 id="db-script">Database Changes</h3>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            Updated shift start and end times in work_shift table from 04:00 and 13:00 to 09:30 and 18:30 respectively
           </td>
         </tr>
       </tbody>
